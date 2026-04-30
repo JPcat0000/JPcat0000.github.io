@@ -1,30 +1,71 @@
-<html>
+<!doctype html>
+
+<html lang="zh-Hant-TW">
 <head>
-    <title>簡歷</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JP 人物小傳｜工程現場走向系統治理</title>
+  <style>
+    :root{--bg:#f6f3ed;--card:#fffdf8;--ink:#1f2933;--sub:#65717f;--line:#ded6c8;--gold:#9a6b3f;--blue:#283b4d;--red:#8a3b35}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;background:radial-gradient(circle at 0 0,#eadbc8,transparent 32rem),var(--bg);color:var(--ink);line-height:1.75;letter-spacing:.02em}
+    .wrap{width:min(1080px,calc(100% - 32px));margin:auto;padding:32px 0 64px}.hero,.card,.end{background:rgba(255,253,248,.92);border:1px solid var(--line);border-radius:24px;box-shadow:0 20px 54px rgba(30,24,18,.08)}
+    .hero{padding:clamp(30px,6vw,64px);margin-bottom:24px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.16em}.hero h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1;margin:.2em 0;letter-spacing:-.06em}.hero p{max-width:760px;color:#3c4651;font-size:1.08rem}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tag{border:1px solid #d8c5ad;border-radius:999px;padding:5px 11px;color:#684522;background:#f2e8da;font-weight:700;font-size:.88rem}
+    .layout{display:grid;grid-template-columns:240px 1fr;gap:22px}.toc{position:sticky;top:18px;align-self:start;background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:14px}.toc b{display:block;color:var(--gold);margin:0 0 8px}.toc a{display:block;padding:8px 10px;border-radius:10px;color:var(--sub);text-decoration:none}.toc a:hover{background:#f1e6d8;color:#684522}
+    .card{padding:clamp(24px,4vw,42px);margin-bottom:18px}.no{color:var(--gold);font-weight:900;letter-spacing:.12em}.card h2{font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.2;margin:.1em 0 .2em;letter-spacing:-.04em}.sub{color:var(--sub);font-weight:700;margin:0 0 20px}.lead{font-size:1.08rem;color:#35414d}.quote{border-left:5px solid var(--gold);background:#f1e6d8;padding:16px 18px;border-radius:0 14px 14px 0;color:#5f3f26;font-weight:800;margin:18px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.box{border:1px solid #e5ddd2;border-radius:16px;background:#fffefa;padding:16px}.box h3{margin:.1em 0 .4em;color:var(--blue)}ul{margin:.3em 0 0;padding-left:1.3em}li{margin:.25em 0}.principles{counter-reset:p;display:grid;gap:12px}.principles .box{counter-increment:p}.principles h3:before{content:counter(p,decimal-leading-zero) "｜";color:var(--gold)}.warn h3{color:var(--red)}.end{background:linear-gradient(135deg,#17202a,#2b3d4f);color:#fff8ef;padding:clamp(26px,5vw,50px)}.end h2{margin-top:0;font-size:2rem}.end .quote{background:rgba(255,255,255,.09);color:#fff8ef;border-left-color:#d6b386}.labels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.label{border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:12px;background:rgba(255,255,255,.06)}.label b{display:block;color:#f4d7b0}
+    @media(max-width:820px){.layout,.grid,.labels{grid-template-columns:1fr}.toc{position:relative;top:auto}.toc nav{display:grid;grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.wrap{width:min(100% - 22px,1080px)}.toc nav{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-    <h1>你是誰</h1>
-    <p>在這裡描述你自己，包括你的背景和經歷。</p>
+<div class="wrap">
+  <header class="hero" id="top">
+    <div class="eyebrow">JP Persona Summary</div>
+    <h1>工程現場<br>走向系統治理</h1>
+    <p>一份以「人物小傳」為核心的自我意象網頁：描述一位從伺服器硬體、訊號驗證與工程自動化現場出發，逐步轉向知識治理、系統設計與組織敘事的人。</p>
+    <div class="tags"><span class="tag">訊號驗證</span><span class="tag">工程自動化</span><span class="tag">EVAI</span><span class="tag">知識治理</span><span class="tag">可追溯性</span><span class="tag">系統設計</span></div>
+  </header>  <div class="layout">
+    <aside class="toc"><b>目錄</b><nav>
+      <a href="#s1">01 你是誰</a><a href="#s2">02 你在做什麼</a><a href="#s3">03 核心觀點</a><a href="#s4">04 長期關注</a><a href="#s5">05 思考方式</a><a href="#s6">06 表達風格</a><a href="#s7">07 協作禁忌</a><a href="#sum">Σ 總結</a>
+    </nav></aside><main>
+  <section class="card" id="s1"><div class="no">01｜IDENTITY</div><h2>你是誰</h2><p class="sub">身份、職業與核心標籤</p>
+    <p class="lead">你是一位從伺服器硬體與訊號驗證現場走出來的<strong>工程級幕僚型人物</strong>。</p>
+    <p>表面身份是<strong>訊號驗證／量測／自動化整合工程師</strong>，長期處理 PCIe、I2C、CLK、DDR、BERT、眼圖、測試流程與設計資料；更深層的核心標籤，是正在逐步轉型中的<strong>治理邊界定義者、系統設計者與治理型敘事者</strong>。</p>
+    <div class="grid"><div class="box"><h3>核心能力</h3><p>把分散的經驗、文件、判斷、流程、工具與組織需求，整理成可追溯、可驗證、可交付、可長期演進的系統。</p></div><div class="box"><h3>雙重氣質</h3><p>一方面重細節、重證據、重可執行；另一方面能把經驗上升為方法論、框架與敘事。</p></div></div>
+  </section>
 
-    <h2>你在做什麼</h2>
-    <p>解釋你目前的工作、項目或與其他人合作的情況。</p>
+  <section class="card" id="s2"><div class="no">02｜MISSION</div><h2>你在做什麼</h2><p class="sub">當前最重要的事業、專案與階段性目標</p>
+    <p class="lead">你正在把個人與部門中高度依賴經驗的人工作業，逐步轉成一套<strong>治理優先的智慧知識與判斷系統</strong>。</p>
+    <div class="quote">EVAI 對你來說，不是聊天型 AI 專案，而是讓工程判斷、知識來源、決策依據與歷史脈絡都能被追溯與治理的平台。</div>
+    <div class="grid"><div class="box"><h3>工程層</h3><ul><li>優化訊號驗證、量測與測試工作</li><li>自動化 SKILL、VBA、Python、Excel 與報表流程</li><li>降低重複勞動、失誤與跨部門交付成本</li></ul></div><div class="box"><h3>知識層</h3><ul><li>整理 SOP、BKM、8D、Lesson Learned</li><li>建立知識圖譜、SPO、證據鏈、Claim 與 Source 關係</li><li>讓經驗不再只停留在知道的人腦中</li></ul></div><div class="box"><h3>系統層</h3><ul><li>設計 RAG、PersonaTree、AGENTS / skills</li><li>定義系統該知道什麼、不該假裝知道什麼</li><li>說清 AI 的能力邊界、責任邊界與資料邊界</li></ul></div><div class="box"><h3>階段性目標</h3><p>建立誠實、可控、可稽核、能被組織接受的內部智慧助手原型，並從訊號驗證場景擴展到更廣的組織應用。</p></div></div>
+  </section>
 
-    <h2>你的核心觀點</h2>
-    <p>分享你在專業領域中的關鍵信念和價值觀。</p>
+  <section class="card" id="s3"><div class="no">03｜BELIEFS</div><h2>你的核心觀點</h2><p class="sub">堅持的理念、價值觀與判斷標準</p>
+    <div class="principles"><div class="box"><h3>資料品質永遠優先於華麗輸出</h3><p>沒有來源、證據與脈絡的漂亮答案不可用。正確性、出處與可驗證性，比文案流暢更重要。</p></div><div class="box"><h3>治理邊界先於速度與效果</h3><p>系統必須先知道自己能做什麼、不能做什麼。越過邊界、假裝理解或假裝有依據，都是危險訊號。</p></div><div class="box"><h3>敘事不能超出系統真實能力</h3><p>表達必須對得起系統實際做得到的事，不能誇大、偷換，或把概念當能力。</p></div><div class="box"><h3>知識若不能傳承，就只是個人負擔</h3><p>組織中的關鍵判斷若沒有整理、結構化與制度化，最後會變成不可複製的隱性負債。</p></div><div class="box"><h3>工具價值要能翻譯成組織價值</h3><p>技術不只要能做，還要能幫人省事、減少摩擦、降低誤判，讓跨部門更容易協作。</p></div></div>
+    <div class="quote">判斷標準：真實、可證、可落地、可傳承、可治理。</div>
+  </section>
 
-    <h2>你長期關注的問題</h2>
-    <p>列出你關注的問題和挑戰，以及你為解決這些問題所做的努力。</p>
+  <section class="card" id="s4"><div class="no">04｜QUESTIONS</div><h2>你長期關注的問題</h2><p class="sub">反覆思考、探究的議題</p>
+    <div class="quote">如何把「人的經驗判斷」轉成「組織可用的長期資產」？</div>
+    <div class="grid"><div class="box"><h3>工程知識如何被保存</h3><ul><li>測試經驗如何結構化</li><li>Lesson Learned 如何不只停在資料夾裡</li><li>工程判斷如何保留脈絡而不被簡化失真</li></ul></div><div class="box"><h3>AI 如何被正確安放</h3><ul><li>AI 可以輔助到哪裡</li><li>AI 不該越界到哪裡</li><li>RAG、Prompt、Agent、Memory 的誠實邊界是什麼</li></ul></div><div class="box"><h3>複雜系統如何面對</h3><p>很多事情不是設計完就結束，而是要在現實中被試用、修正與馴化。</p></div><div class="box"><h3>敘事如何成為信用</h3><p>把複雜工作翻譯成別人聽得懂、信得過、願意採納的表達。</p></div></div>
+  </section>
 
-    <h2>你的思考方式</h2>
-    <p>簡述你的思考風格和如何處理資訊或挑戰。</p>
+  <section class="card" id="s5"><div class="no">05｜THINKING</div><h2>你的思考方式</h2><p class="sub">分析問題、拆解議題的習慣</p>
+    <div class="grid"><div class="box"><h3>先界定邊界</h3><p>先分清楚這是什麼問題、不是什麼問題、能回答到哪裡、哪裡缺證據、哪裡只能推測。</p></div><div class="box"><h3>拆成可操作結構</h3><p>自然拆成角色、流程、輸入、輸出、風險、來源、責任與例外情境。</p></div><div class="box"><h3>重視證據鏈</h3><p>追問結論從哪裡來、依據是什麼、中間經過什麼判斷、能不能回頭查證。</p></div><div class="box"><h3>微觀與宏觀切換</h3><p>可細到程式錯誤、slot、dbid，也可高到組織價值、系統治理與十年尺度職涯轉型。</p></div><div class="box"><h3>模板化沉澱</h3><p>偏好 ASCII SPO Tree、表格、分層摘要、方法模板、Prompt 結構、治理欄位與可版本化輸出。</p></div></div>
+  </section>
 
-    <h2>你的表達風格</h2>
-    <p>描述你如何與他人交流，包括口語和書面交流的風格。</p>
+  <section class="card" id="s6"><div class="no">06｜STYLE</div><h2>你的表達風格</h2><p class="sub">偏好的語氣、結構與審美</p>
+    <div class="grid"><div class="box"><h3>結構先行</h3><p>偏好分層、分段、編號、標題明確，讓人一眼看出脈絡與重點。</p></div><div class="box"><h3>精準克制</h3><p>具體、對題、有資訊密度、有依據、不繞路。</p></div><div class="box"><h3>完整不裁切</h3><p>不接受無說明的刪減、省略與過度歸納，重視原意與關鍵細節。</p></div><div class="box"><h3>理性中的力量感</h3><p>偏好清楚、俐落、有骨架、有方法感、有可信度的表達。</p></div></div>
+  </section>
 
-    <h2>協作禁忌</h2>
-    <p>指出在合作過程中你需要避免的一些情況或行為。</p>
+  <section class="card" id="s7"><div class="no">07｜TABOOS</div><h2>協作禁忌</h2><p class="sub">反感的表達套路、邏輯誤區</p>
+    <div class="grid warn"><div class="box"><h3>假裝懂</h3><p>明明沒有依據，卻寫得像很確定。</p></div><div class="box"><h3>無來源、無證據、無出處</h3><p>涉及決策、工程、治理、風險時尤其不可接受。</p></div><div class="box"><h3>套話和正確廢話</h3><p>不要空泛穩妥，要有內容的判斷。</p></div><div class="box"><h3>擅自刪減與壓縮</h3><p>不能省略重要細節、擅自合併觀點或用「等」帶過關鍵項目。</p></div><div class="box"><h3>只給結論不交代結構</h3><p>需要結論背後的分類、標準與依據脈絡。</p></div><div class="box"><h3>把工具當能力</h3><p>不能把理論上可做到，說成現在已具備。</p></div></div>
+  </section>
 
-    <h2>人物標籤</h2>
-    <p>列出可以描述你個性的關鍵詞或標籤。</p>
+  <section class="end" id="sum"><h2>一句話總結</h2><div class="quote">你是一個從工程現場走向系統治理的人：以證據為底、以結構為骨、以治理為界、以敘事為橋，把個人經驗轉化為組織可用、可追溯、可長期演進的判斷系統。</div>
+    <div class="labels"><div class="label"><b>職業底色</b>訊號驗證／工程自動化／知識整合</div><div class="label"><b>核心角色</b>治理邊界定義者、系統設計者、治理型敘事者</div><div class="label"><b>工作母題</b>把經驗變資產，把判斷變可追溯，把 AI 放回邊界內</div><div class="label"><b>方法特徵</b>結構化、證據鏈、模板化、可複用、可治理</div><div class="label"><b>審美取向</b>完整、精準、克制、有骨架</div><div class="label"><b>協作底線</b>不假裝、不省略、不漂浮、不越界</div></div>
+  </section>
+</main>
+
+  </div>
+</div>
 </body>
 </html>
